@@ -35,16 +35,22 @@ header {
 
 
 #box {
-   width: 20em;
-   padding-bottom: 20em;
+   width: 9em;
+   padding-bottom: 9em;
    background: #01870c;
    color: #000000;
    position: relative;
    float: left;
+   vertical-align: bottom;
 }
 
 #box:hover {
    background: #51cf2b; 
+}
+#box.box.aktive{
+    /*position:absolute;*/
+    background:#51ff44
+    ;
 }
 
 #innerContent {
@@ -53,18 +59,25 @@ header {
    right: 5px;
    top: 5px;
    bottom: 5px;
-   background:#51cf2b;
+   background:#FFFFFF;
+   vertical-align: bottom;
+   display: table-cell;
 }
 
 .stationlinks{
-    /*position:absolute;*/
     max-height:100%;
     left:0%;
     max-width:100%;
     vertical-align: bottom;
-    top: 100%;
-    /*visibility: hidden;*/
+    text-align: center;
 }
+
+.stationlinks img{
+    max-height:100%;
+    max-width:100%;
+    vertical-align: bottom;
+}
+
 
 #wrap {
       overflow: hidden;

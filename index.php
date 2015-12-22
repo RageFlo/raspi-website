@@ -32,18 +32,20 @@ if ($volumepos == 0) {
         <div id="wrap">
       <?php
             $counter = 0;
+            
             for ($counter = 1 ; $counter <= 4; $counter++){
+                $activeClass = "box";
+                if($counter==$stn){
+                    $activeClass = "box aktive";
+                }
                 echo <<<END
-                <div id="box"> <div id="innerContent">
-                <a href="?station=$counter" class="stationlinks"><img  class="stationlinks" src="pics/sender-$counter.png" alt="sender$counter"></a> 
-                </div></div>
+                <div id="box" class="$activeClass"><a href="?station=$counter" class="stationlinks"> <div id="innerContent">
+                <img  class="stationlinks" src="pics/sender-$counter.png" alt="sender$counter" vertical-align="button"> 
+                </div></a></div>
 END;
             }
         ?>
         </div>
-        <?php
-            echo "Test";
-        ?>
         <footer>
 
         </footer>
