@@ -1,0 +1,71 @@
+body {
+	background:#004118;
+	font-size:100%;
+	margin:0em;
+	padding:0em;
+}
+
+h1 {
+	font-size:2.0em;
+	line-height:2.1em;
+	font-family:Helvetica;
+	font-weight:100;
+	color:#FFFFFB;
+	margin:0em 0em 0em 0.3em;
+    text-shadow: 3px 3px 2px #000;
+}
+
+/* Header */ 
+header {
+	display:block;
+	background:#008F12;
+    background-image: url("pics/header-frosch.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% bottom;
+	text-align:left;
+}
+
+.header-sep{
+   display: block;
+   background-color: #003111;
+   margin: 0em;
+   padding-top: 0.3em;
+}
+
+
+#box {
+   width: 20em;
+   padding-bottom: 20em;
+   background: #01870c;
+   color: #000000;
+   position: relative;
+   float: left;
+}
+
+#box:hover {
+   background: #51cf2b; 
+}
+
+#innerContent {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   background:#51cf2b;
+}
+
+.stationlinks{
+    /*position:absolute;*/
+    max-height:100%;
+    left:0%;
+    max-width:100%;
+    vertical-align: bottom;
+    top: 100%;
+    /*visibility: hidden;*/
+}
+
+#wrap {
+      overflow: hidden;
+    }
